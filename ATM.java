@@ -28,8 +28,8 @@ class Pin{
         void Menu(){
             System.out.println("*******************");
             System.out.println("1.Check Balance");
-            System.out.println("2.Withdraw");
-            System.out.println("3.Deposite");
+            System.out.println("2.Cash Withdraw");
+            System.out.println("3.Cash Deposite");
             System.out.println("4.Change Pin"); 
             System.out.println("5.Exit");
             System.out.println("*******************");
@@ -45,7 +45,18 @@ class Pin{
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter The Amount:");
         WD = sc.nextInt();
-        Bal = Bal - WD;
+        if(WD < Bal )
+        {
+            System.out.println("Cash Withdra Successfully!!! ");
+            Bal = Bal - WD;
+            
+            
+        }
+        else
+        {
+            System.out.println("Insufficient Balance ");
+        }
+        
         // Menu();
      }
 
