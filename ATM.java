@@ -37,7 +37,7 @@ class Pin{
         }
      void checkblance(){
          System.out.print("Your Balance is :"+Bal+"\n");
-        //  Menu();
+     
 
      }
 
@@ -47,7 +47,7 @@ class Pin{
         WD = sc.nextInt();
         if(WD < Bal )
         {
-            System.out.println("Cash Withdra Successfully!!! ");
+            System.out.println("Cash Withdrawal Successfully!!! ");
             Bal = Bal - WD;
             
             
@@ -56,16 +56,15 @@ class Pin{
         {
             System.out.println("Insufficient Balance ");
         }
-        
-        // Menu();
+     
      }
 
      void Deposite(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter The Amount:");
         DP = sc.nextInt();
-        Bal = Bal + DP;
-        // Menu();
+          Bal = Bal + DP;
+          System.out.println("Cash Deposit Successfully!!! ");
      }
 
      void changepin(){
@@ -80,8 +79,6 @@ class Pin{
 
             System.out.println("This Phone Number Not Linked To The Account");
         }
-        
-       
      }
     }
 
